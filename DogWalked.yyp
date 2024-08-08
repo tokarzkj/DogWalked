@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
     {"id":{"name":"spr_german_shepard","path":"sprites/spr_german_shepard/spr_german_shepard.yy",},},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
