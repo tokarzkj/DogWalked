@@ -1,4 +1,5 @@
-// main function for moving the dog every step.
+/// @function move_dog();
+/// main function for moving the dog every step.
 function move_dog()
 {
 	var _prey = prey_detection();
@@ -23,9 +24,10 @@ function move_dog()
 	}
 }
 
-// Call in the player movement script to allow the dog to move with the player
-function move_dog_with_player()
+/// @function move_dog_with_player();
+/// Call in the player movement script to allow the dog to move with the player
+function move_dog_with_player(_move_x, _move_y)
 {
-	obj_dog.move_x = move_x;
-	obj_dog.move_y = move_y;
+	obj_dog.move_x = _move_x;
+	obj_dog.move_y = _move_y;
 }
