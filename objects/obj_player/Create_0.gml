@@ -4,3 +4,5 @@ jump_speed = 11;
 
 move_x = 0;
 move_y = 0;
+
+treat_count = 3;
