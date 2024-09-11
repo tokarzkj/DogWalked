@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"leash",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"leash",
+  "parent":{
+    "name":"PlayerAndDog",
+    "path":"folders/Scripts/PlayerAndDog.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

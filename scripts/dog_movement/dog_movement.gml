@@ -20,7 +20,16 @@ function move_dog()
 	}
 	else
 	{
-		move_towards_point(_prey.x, y, 3);
+		if (!place_meeting(x + 10, y, _prey))
+		{
+			move_towards_point(_prey.x, y, 3);
+			show_debug_message("Distance to prey {0}", distance_to_object(_prey));
+		}
+		else
+		{
+			speed = 0;
+			image_speed = 0;	
+		}
 	}
 }
 
