@@ -5,17 +5,11 @@
 function move_player(){
 	move_x = keyboard_check(ord("D")) - keyboard_check(ord("A"));
 	move_x *= move_speed;
+	
+	move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+	move_y *= move_speed;
 
 	var _tilemap = layer_tilemap_get_id("Tiles_1");
-	if (place_meeting(x, y+3, _tilemap))
-	{
-		move_y = 0;
-		if (keyboard_check(ord("W"))) move_y = -jump_speed;
-	}
-	else if (move_y < 10)
-	{ 
-		move_y += 1;
-	}
 
 	move_dog_with_player(move_x, move_y)
 

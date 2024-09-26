@@ -5,31 +5,53 @@ function move_dog()
 	var _prey = prey_detection();
 	if (_prey == noone)
 	{
-		if (move_x == 0)
-		{
-			image_speed = 0;		
-		}
-		else
-		{
-			image_speed = 1;	
-		}
-
-		var _tilemap = layer_tilemap_get_id("Tiles_1");
-		move_and_collide(move_x, move_y, _tilemap, 4, 3, 3, move_speed, -1);
-		x = clamp(x, obj_player.x + 15, room_width + 20);
+		dog_walking_movement();
 	}
 	else
 	{
-		if (!place_meeting(x + 10, y, _prey))
-		{
-			move_towards_point(_prey.x, y, 3);
-			show_debug_message("Distance to prey {0}", distance_to_object(_prey));
-		}
-		else
-		{
-			speed = 0;
-			image_speed = 0;	
-		}
+		dog_chasing_movement(_prey);
+	}
+}
+
+function dog_walking_movement()
+{
+	if (move_x == 0)
+	{
+		image_speed = 0;
+		return_to_player(obj_player);
+	}
+	else
+	{
+		image_speed = 1;	
+	}
+
+	var _tilemap = layer_tilemap_get_id("Tiles_1");
+	move_and_collide(move_x, move_y, _tilemap, 4, 3, 3, move_speed, -1);
+	x = clamp(x, obj_player.x + 15, room_width + 20);
+}
+
+function dog_chasing_movement(_prey)
+{
+	if (!place_meeting(x + 10, y, _prey))
+	{
+		move_towards_point(_prey.x, _prey.y, move_speed);
+	}
+	else
+	{
+		instance_destroy(_prey);
+	}
+}
+
+function return_to_player(_player)
+{
+	if (point_distance(x, y, _player.x, _player.y) < 25)
+	{
+		speed = 0;
+		image_speed = 0;
+	}
+	else
+	{
+		move_towards_point(_player.x, _player.y, move_speed);
 	}
 }
 
