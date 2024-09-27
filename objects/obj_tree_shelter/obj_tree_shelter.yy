@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rabbit",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_tree_shelter",
+  "eventList":[],
   "managed":true,
-  "name":"obj_rabbit",
+  "name":"obj_tree_shelter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Animals",
-    "path":"folders/Objects/Animals.yy",
+    "name":"Shelters",
+    "path":"folders/Objects/Animals/Shelters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rabbit",
-    "path":"sprites/spr_rabbit/spr_rabbit.yy",
+    "name":"spr_tree",
+    "path":"sprites/spr_tree/spr_tree.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -9,8 +9,8 @@
   "name":"obj_dog_treat",
   "overriddenProperties":[],
   "parent":{
-    "name":"resources",
-    "path":"folders/Objects/resources.yy",
+    "name":"Resources",
+    "path":"folders/Objects/Resources.yy",
   },
   "parentObjectId":null,
   "persistent":false,

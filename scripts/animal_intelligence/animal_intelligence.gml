@@ -16,3 +16,8 @@ function detect_dog(_animal_x, _animal_y, _detection_radius)
 		_within_detection_radius: _distance <= _detection_radius
 	}
 }
+
+function find_shelter()
+{
+		
+}
