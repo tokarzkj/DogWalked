@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-var _detection_results = detect_dog(x, y, detection_radius);
+var _detection_results = detect_dog(obj_dog.id, x, y, detection_radius);
 if(_detection_results._within_detection_radius)
 {
 	var _direction_to_move = 1;

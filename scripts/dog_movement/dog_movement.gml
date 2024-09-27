@@ -1,11 +1,12 @@
-/// @function move_dog();
+/// @function move_dog(_player);
 /// main function for moving the dog every step.
-function move_dog()
+/// @param {ID.Instance} _player		instance of player to shelter from
+function move_dog(_player)
 {
 	var _prey = prey_detection();
 	if (_prey == noone)
 	{
-		dog_walking_movement();
+		dog_walking_movement(_player);
 	}
 	else
 	{
@@ -13,7 +14,11 @@ function move_dog()
 	}
 }
 
-function dog_walking_movement()
+/// @function dog_walking_movement(_player)
+/// This method takes the animals coordinates and confirms if the dog 
+/// is within detection radius of said animal.
+/// @param {ID.Instance} _player		instance of player to shelter from
+function dog_walking_movement(_player)
 {
 	if (move_x == 0)
 	{
@@ -27,13 +32,13 @@ function dog_walking_movement()
 
 	if (is_away_from_player)
 	{
-		return_to_player(obj_player);
+		return_to_player(_player);
 	}
 	else
 	{
 		var _tilemap = layer_tilemap_get_id("Tiles_1");
 		move_and_collide(move_x, move_y, _tilemap, 4, 3, 3, move_speed, -1);
-		x = clamp(x, obj_player.x + 15, room_width + 20);
+		x = clamp(x, _player.x + 15, room_width + 20);
 	}
 }
 
@@ -64,14 +69,17 @@ function return_to_player(_player)
 	}
 }
 
-/// @function move_dog_with_player();
+/// @function move_dog_with_player(_dog, _move_x, _move_y);
 /// Call in the player movement script to allow the dog to move with the player when the dog is
 /// walking with the player
-function move_dog_with_player(_move_x, _move_y)
+/// @param{Instance.Id} _dog	instance of dog to move with player
+/// @param{real} _move_x		distance to move on x-axis
+/// @param{real} _move_y		distance to move on y-axis
+function move_dog_with_player(_dog, _move_x, _move_y)
 {
-	if (!obj_dog.is_away_from_player)
+	if (!_dog.is_away_from_player)
 	{
-		obj_dog.move_x = _move_x;
-		obj_dog.move_y = _move_y;
+		_dog.move_x = _move_x;
+		_dog.move_y = _move_y;
 	}
 }

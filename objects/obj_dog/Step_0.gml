@@ -1,2 +1,2 @@
 /// @description Insert description here
-move_dog();
+move_dog(obj_player.id);
