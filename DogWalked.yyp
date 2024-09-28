@@ -53,6 +53,7 @@
     {"id":{"name":"obj_rabbit","path":"objects/obj_rabbit/obj_rabbit.yy",},},
     {"id":{"name":"obj_tree_shelter","path":"objects/obj_tree_shelter/obj_tree_shelter.yy",},},
     {"id":{"name":"StartMenu","path":"rooms/StartMenu/StartMenu.yy",},},
+    {"id":{"name":"animal_events","path":"scripts/animal_events/animal_events.yy",},},
     {"id":{"name":"animal_intelligence","path":"scripts/animal_intelligence/animal_intelligence.yy",},},
     {"id":{"name":"dog_movement","path":"scripts/dog_movement/dog_movement.yy",},},
     {"id":{"name":"leash","path":"scripts/leash/leash.yy",},},

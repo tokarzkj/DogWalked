@@ -37,8 +37,9 @@ function dog_walking_movement(_player)
 	else
 	{
 		var _tilemap = layer_tilemap_get_id("Tiles_1");
-		move_and_collide(move_x, move_y, _tilemap, 4, 3, 3, move_speed, -1);
-		x = clamp(x, _player.x + 15, room_width + 20);
+		var _collision_checks = [_tilemap, obj_tree_shelter];
+		move_and_collide(move_x, move_y, _collision_checks, 4, 3, 3, move_speed, -1);
+		x = clamp(x, _player.x + 15, _player.x + 75);
 	}
 }
 

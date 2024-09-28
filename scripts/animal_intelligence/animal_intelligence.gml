@@ -18,7 +18,23 @@ function detect_dog(_dog, _animal_x, _animal_y, _detection_radius)
 	}
 }
 
-function find_shelter()
+/// @function find_nearest_shelter(_animal, _sight_radius)
+/// Returns the nearest shelter within the animals detection radius otherwise returns noone
+/// @param {ID.Instance} _animal
+function find_nearest_shelter(_animal)
 {
-		
+	var _potential_shelters = ds_list_create();
+	var _number_of_shelters =
+		collision_circle_list(_animal.x, _animal.y, _animal.sight_radius,
+							  [obj_tree_shelter], false, true, _potential_shelters, true);
+						  
+	if (_number_of_shelters == 0)
+	{
+		ds_list_destroy(_potential_shelters);
+		return noone;
+	}
+	
+	var _nearest_shelter = ds_list_find_value(_potential_shelters, 0);
+	ds_list_destroy(_potential_shelters);
+	return _nearest_shelter;
 }

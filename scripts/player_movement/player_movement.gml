@@ -9,10 +9,10 @@ function move_player(_dog){
 	move_y = keyboard_check(ord("S")) - keyboard_check(ord("W"));
 	move_y *= move_speed;
 
-	var _tilemap = layer_tilemap_get_id("Tiles_1");
-
 	move_dog_with_player(_dog, move_x, move_y)
-
-	move_and_collide(move_x, move_y, _tilemap, 4, 3, 3, move_speed, -1);
+	
+	var _tilemap = layer_tilemap_get_id("Tiles_1");
+	var _collision_checks = [_tilemap, obj_tree_shelter];
+	move_and_collide(move_x, move_y, _collision_checks, 4, 3, 3, move_speed, -1);
 	x = clamp(x, 0 + 10, room_width + 20);
 }
