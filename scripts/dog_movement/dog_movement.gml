@@ -4,14 +4,35 @@
 function move_dog(_player)
 {
 	var _prey = prey_detection();
-	if (_prey == noone)
+	
+	if (target_treat == noone)
+	{
+		target_treat = detect_treat()
+	}
+	
+	if (target_treat != noone)
+	{
+		dog_chasing_movement(target_treat, _player);	
+	}
+	else if (_prey == noone)
 	{
 		dog_walking_movement(_player);
 	}
 	else
 	{
-		dog_chasing_movement(_prey);
+		dog_chasing_movement(_prey, _player);
 	}
+}
+
+function detect_treat()
+{
+	var _treat = instance_nearest(x, y, obj_dog_treat);
+	if (random(10) > 6)
+	{
+		return _treat;
+	}
+	
+	return noone;
 }
 
 /// @function dog_walking_movement(_player)
@@ -32,6 +53,7 @@ function dog_walking_movement(_player)
 
 	if (is_away_from_player)
 	{
+		stop_dragging_player(_player);
 		return_to_player(_player);
 	}
 	else
@@ -43,12 +65,15 @@ function dog_walking_movement(_player)
 	}
 }
 
-function dog_chasing_movement(_prey)
+function dog_chasing_movement(_prey, _player)
 {
 	is_away_from_player = true;
 	if (!place_meeting(x + 10, y, _prey))
 	{
 		move_towards_point(_prey.x, _prey.y, move_speed);
+		var _x_lag_distance = -1 * image_xscale * 10
+		
+		move_player_with_dog(_player, self, x + _x_lag_distance, y);
 	}
 	else
 	{
