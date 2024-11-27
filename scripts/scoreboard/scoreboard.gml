@@ -1,5 +1,20 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function update_score(_points)
+{
+	var _game = instance_find(obj_game, 0);
+	var _new_score = _game.game_score + _points;
+	
+	if (_new_score > 0)
+	{
+		_game.game_score = _new_score	
+	}
+	else
+	{
+		_game.game_score = 0;
+	}	
+}
+
 function set_score(_game_score){
 	var _simple_banner_index = asset_get_index("spr_simple_small_banner");
 	var _simple_banner_width = sprite_get_width(_simple_banner_index);

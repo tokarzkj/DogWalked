@@ -5,6 +5,7 @@ target_treat = noone;
 
 if (random(5) > 1)
 {
+	update_score(5);
 	self.prey_drive = 0;	
 	alarm_set(0, 180);
 }
