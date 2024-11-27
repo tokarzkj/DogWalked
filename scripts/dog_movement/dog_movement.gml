@@ -77,6 +77,8 @@ function dog_chasing_movement(_prey, _player)
 	}
 	else
 	{
+		var _game = instance_find(obj_game, 0);
+		_game.game_score -= 10;
 		instance_destroy(_prey);
 	}
 }
