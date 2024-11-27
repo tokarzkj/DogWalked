@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"animal_intelligence",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"animal_intelligence",
+  "parent":{
+    "name":"Animals",
+    "path":"folders/Scripts/Animals.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

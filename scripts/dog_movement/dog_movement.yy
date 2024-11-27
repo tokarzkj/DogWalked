@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"dog_movement",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"dog_movement",
+  "parent":{
+    "name":"Dog",
+    "path":"folders/Scripts/Dog.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
