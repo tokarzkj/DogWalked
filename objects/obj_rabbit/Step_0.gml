@@ -3,6 +3,7 @@
 var _detection_results = detect_dog(obj_dog.id, x, y, detection_radius);
 if(_detection_results._within_detection_radius)
 {
+	path_end();
 	var _shelter = find_nearest_shelter(self);
 	if (_shelter == noone)
 	{
