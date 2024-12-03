@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"lost_dogs",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"lost_dogs",
+  "parent":{
+    "name":"Types",
+    "path":"folders/Scripts/Game/Types.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

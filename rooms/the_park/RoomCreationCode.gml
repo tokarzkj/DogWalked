@@ -8,3 +8,6 @@ with (_rabbit1)
 {
 	path_start(pth_rabbit_1, 2, path_action_continue, true);
 }
+
+var _lake_id = layer_tilemap_get_id("Tiles_lake_1")
+spawn_lost_dogs(5, [_lake_id, obj_tree_shelter]);

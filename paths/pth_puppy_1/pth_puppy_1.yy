@@ -1,0 +1,18 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_puppy_1",
+  "closed":false,
+  "kind":0,
+  "name":"pth_puppy_1",
+  "parent":{
+    "name":"Level1",
+    "path":"folders/Paths/Level1.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":223.0,"y":191.0,},
+    {"speed":100.0,"x":351.0,"y":191.0,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}

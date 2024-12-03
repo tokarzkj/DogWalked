@@ -18,7 +18,8 @@ function move_player(_dog) {
 	var _collision_checks = [_tilemap, obj_tree_shelter];
 	
 	move_and_collide(move_x, move_y, _collision_checks, 4, 0, 0, move_speed, -1);
-	x = clamp(x, 0 + 10, room_width + 20);
+	x = clamp(x, 0 + 10, room_width - 10);
+	y = clamp(y, 0 + 10, room_height - 20);
 }
 
 function move_player_with_dog(_player, _dog, _x, _y)

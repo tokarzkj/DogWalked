@@ -61,7 +61,21 @@ function dog_walking_movement(_player)
 		var _tilemap = layer_tilemap_get_id("Tiles_lake_1");
 		var _collision_checks = [_tilemap, obj_tree_shelter];
 		move_and_collide(move_x, move_y, _collision_checks, 4, 0, 0, move_speed, -1);
-		x = clamp(x, _player.x + 15, _player.x + 75);
+		
+		var _max_x =  _player.x + 75;
+		if (_max_x > room_width)
+		{
+			_max_x = room_width - 13;
+		}
+		x = clamp(x, _player.x + 15, _max_x);
+		
+		var _max_y =  _player.y + 75;
+		if (_max_y > room_height)
+		{
+			_max_y = room_height - 10;
+		}
+		
+		y = clamp(y, _player.y + 15, _max_y);
 	}
 }
 
