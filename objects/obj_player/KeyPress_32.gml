@@ -1,3 +1,5 @@
 /// @description Hit the 
 // You can write your code in this editor
-throw_treat(self);
+
+var _dog = instance_find(obj_dog, 0);
+throw_treat(self, _dog);
