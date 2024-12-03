@@ -1,0 +1,21 @@
+{
+  "$GMPath":"",
+  "%Name":"pth_rabbit_1",
+  "closed":true,
+  "kind":0,
+  "name":"pth_rabbit_1",
+  "parent":{
+    "name":"Level1",
+    "path":"folders/Paths/Level1.yy",
+  },
+  "points":[
+    {"speed":100.0,"x":480.0,"y":992.0,},
+    {"speed":100.0,"x":556.0,"y":845.0,},
+    {"speed":100.0,"x":700.0,"y":802.0,},
+    {"speed":100.0,"x":698.22217,"y":667.1112,},
+    {"speed":100.0,"x":373.4444,"y":684.88904,},
+  ],
+  "precision":4,
+  "resourceType":"GMPath",
+  "resourceVersion":"2.0",
+}
