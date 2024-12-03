@@ -24,8 +24,8 @@ function spawn_lost_dogs(_number_of_puppies, _illegal_tiles)
 				_spawned_pup.y += 25
 			}
 			
-			var _path = choose(pth_puppy_1, pth_puppy_2, pth_puppy_3);
-			path_start(_path, 1, path_action_continue, false);
+			//var _path = choose(pth_puppy_1, pth_puppy_2, pth_puppy_3);
+			//path_start(_path, 1, path_action_continue, false);
 		}
 	}
 }
