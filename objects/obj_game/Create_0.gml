@@ -15,3 +15,5 @@ view_camera[0] = camera_create_view(0, 810, view_wport[0], view_hport[0], 0, obj
 game_score = 0;
 
 game_font = font_add("gamefont.ttf", 48, true, true, 32, 128)
+
+randomize();
