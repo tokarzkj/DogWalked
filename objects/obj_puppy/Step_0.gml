@@ -1,6 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-image_xscale = 0.65;
-image_yscale = 0.65;
 
-_is_lost = true;
+if (_is_lost == false)
+{
+	visible = false;
+	path_end();
+}

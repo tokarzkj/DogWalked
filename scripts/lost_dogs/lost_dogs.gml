@@ -29,3 +29,11 @@ function spawn_lost_dogs(_number_of_puppies, _illegal_tiles)
 		}
 	}
 }
+
+function rescue_dog(_puppy, _player)
+{
+	if (point_distance(_puppy.x, _puppy.y, _player.x, _player.y) < 50)
+	{
+		_puppy._is_lost = false;
+	}
+}
