@@ -32,8 +32,14 @@ function spawn_lost_dogs(_number_of_puppies, _illegal_tiles)
 
 function rescue_dog(_puppy, _player)
 {
-	if (point_distance(_puppy.x, _puppy.y, _player.x, _player.y) < 50)
+	if (is_puppy_within_range)
 	{
 		_puppy._is_lost = false;
+		update_score(5);
 	}
+}
+
+function is_puppy_within_range(_puppy, _player)
+{
+	return point_distance(_puppy.x, _puppy.y, _player.x, _player.y) < 50;
 }

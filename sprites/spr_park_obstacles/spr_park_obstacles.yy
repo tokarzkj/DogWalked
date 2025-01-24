@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
-  "%Name":"spr_park",
+  "%Name":"spr_park_obstacles",
   "bboxMode":0,
-  "bbox_bottom":191,
-  "bbox_left":16,
-  "bbox_right":831,
+  "bbox_bottom":111,
+  "bbox_left":0,
+  "bbox_right":335,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,16 +12,16 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"daf81f68-20a9-413f-a7db-e3b5ca65707d","name":"daf81f68-20a9-413f-a7db-e3b5ca65707d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a12377f2-1188-4183-bbe6-73267ca7ebc7","name":"a12377f2-1188-4183-bbe6-73267ca7ebc7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
-  "height":1080,
+  "height":540,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"164cd6de-f0e9-4daa-b582-2e4743409658","blendMode":0,"displayName":"default","isLocked":false,"name":"164cd6de-f0e9-4daa-b582-2e4743409658","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"a590e9a3-8c8d-4cfc-a735-ddf6914ec9bf","blendMode":0,"displayName":"default","isLocked":false,"name":"a590e9a3-8c8d-4cfc-a735-ddf6914ec9bf","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"spr_park",
+  "name":"spr_park_obstacles",
   "nineSlice":null,
   "origin":0,
   "parent":{
@@ -33,7 +33,7 @@
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"",
-    "%Name":"spr_park",
+    "%Name":"spr_park_obstacles",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"spr_park",
+    "name":"spr_park_obstacles",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"daf81f68-20a9-413f-a7db-e3b5ca65707d","path":"sprites/spr_park/spr_park.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"9dd63c46-45cb-4a98-bf12-2ef516a40044","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a12377f2-1188-4183-bbe6-73267ca7ebc7","path":"sprites/spr_park_obstacles/spr_park_obstacles.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"fda47da0-9c75-456e-bcb5-8212b46e58b8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -86,5 +86,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1920,
+  "width":960,
 }
